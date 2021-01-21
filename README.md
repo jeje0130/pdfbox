@@ -8,5 +8,5 @@
 >### Contributors
 >[Shane](github.com/Shane-Park)    
 >[Jeje](https://github.com/jeje0130)   
-.[pamlpri](https://github.com/pamlpri)   
+>[pamlpri](https://github.com/pamlpri)   
 >[JeonghoonWon](https://github.com/JeonghoonWon)   
