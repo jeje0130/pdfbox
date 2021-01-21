@@ -7,5 +7,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/C_Lib/pdfbox-app-2.0.22.jar"/>
+	<classpathentry kind="lib" path="D:/C_Lib/itext-2.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/C_Lib/iTextAsian.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
