@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 import com.lowagie.text.Cell;
 import com.lowagie.text.Document;
@@ -22,7 +23,7 @@ public class ItextExample3 {
 		
 		// 1) com.lowagie.text.Document 클래스 인스턴스를 생성합니다.
 		Document document = new Document();	
-		String fileName = "ItextExample3.PDF";
+		String fileName = Paths.get("").toAbsolutePath().toString()+"/ItextExample3.PDF";
 		
 		try {
 			// 2) Writer와 Document 사이의 연관을 맺어줍니다.
