@@ -52,6 +52,14 @@ public class PdfBoxWriteText_Test {	// PDFBOX를 이용해 PDF파일을 만드�
          //12) PDF 파일명을 지정합니다.
          doc.save("PdfBoxWriteText.pdf");
       }
+	// 13) Chrome 으로 방금 생성한 pdf 파일을 바로 실행해서 확인 합니다.
+      	String fileName = "PdfBoxWriteText.PDF";
+   		String chrome = "C:/Program Files/Google/Chrome/Application/chrome.exe";
+   		try {
+   			new ProcessBuilder(chrome,fileName).start();
+   		} catch (IOException e) {
+   			e.printStackTrace();
+   		}
 
    }
 
