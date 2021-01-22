@@ -33,7 +33,7 @@ public class ItextExample4 {
 			Font font = new Font(BaseFont.createFont("HYGoThic-Medium", "UniKS-UCS2-H", BaseFont.NOT_EMBEDDED), 20);
 			
 			// 5) 사용할 이미지 객체를 생성해줍니다. 
-			Image jpeg = Image.getInstance("https://www.ddit.or.kr/skin/img/sub/facility/bm/img9.jpg");
+			Image jpeg = Image.getInstance("ddit.jpg");
 			
 			// 6) 제가 선택한 이미지가 너무 커서 사이즈를 50%로 줄였습니다.
 			jpeg.scalePercent(50);
