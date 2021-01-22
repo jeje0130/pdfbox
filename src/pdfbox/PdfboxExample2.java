@@ -29,7 +29,7 @@ public class PdfboxExample2 {
             doc.addPage(myPage);
 
             // 4) 이미지 파일 위치를 저장하는 변수를 설정합니다.
-            String imgFileName = "d:/d_other/Coca-Cola-logo.png";
+            String imgFileName = "d:/d_other/코알라.jpg";
             
             // 5) 가져온 이미지를 PDF에 쓰기 위해서 다음 과 같은 작업을 진행합니다.
             PDImageXObject pdImage = PDImageXObject.createFromFile(imgFileName, doc);
