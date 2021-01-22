@@ -3,6 +3,7 @@ package itext;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
@@ -17,7 +18,7 @@ public class ItextExample1 {
 
 		// 1) com.lowagie.text.Document 클래스 인스턴스를 생성합니다.
 		Document document = new Document();	
-		String fileName = "ItextExample1.PDF";
+		String fileName = Paths.get("").toAbsolutePath().toString()+"/ItextExample1.PDF";
 
 		try {
 			// 2) Writer와 Document 사이의 연관을 맺어줍니다.
