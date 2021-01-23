@@ -1,4 +1,4 @@
-package PdfBox;
+package pdfbox;
 
 import java.io.FileInputStream;
 import java.io.IOException;
