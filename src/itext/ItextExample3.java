@@ -1,10 +1,10 @@
 package itext;
 
 import java.awt.Color;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Paths;
 
 import com.lowagie.text.Cell;
 import com.lowagie.text.Document;
@@ -23,11 +23,11 @@ public class ItextExample3 {
 		
 		// 1) com.lowagie.text.Document 클래스 인스턴스를 생성합니다.
 		Document document = new Document();	
-		String fileName = Paths.get("").toAbsolutePath().toString()+"/ItextExample3.PDF";
+		File file = new File("ItextExample3.PDF");
 		
 		try {
 			// 2) Writer와 Document 사이의 연관을 맺어줍니다.
-			PdfWriter.getInstance(document, new FileOutputStream(fileName));	
+			PdfWriter.getInstance(document, new FileOutputStream(file));	
 			
 			// 3)  문서를 오픈합니다.
 			document.open();
@@ -74,7 +74,7 @@ public class ItextExample3 {
 		// 10) Chrome 으로 방금 작성한 파일을 바로 열어서 확인해봅니다.
 		String chrome = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 		try {
-			new ProcessBuilder(chrome,fileName).start();
+			new ProcessBuilder(chrome,file.getAbsolutePath()).start();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
